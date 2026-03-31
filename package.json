@@ -1,0 +1,14 @@
+{
+  "name": "cc-dump",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "source-map": "^0.7.6",
+    "tar": "^7.5.13"
+  }
+}
