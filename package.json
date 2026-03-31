@@ -1,6 +1,11 @@
 {
-  "name": "cc-dump",
+  "name": "occ",
   "private": true,
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "setup": "bun scripts/restore.ts && bun scripts/generate-types.ts && bun install --cwd claw-code",
+    "dev": "bun --define 'MACRO.VERSION=2.1.8888' ./claw-code/src/entrypoints/cli.tsx"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "claudecode",
+      "name": "occ",
       "dependencies": {
         "source-map": "^0.7.6",
         "tar": "^7.5.13",

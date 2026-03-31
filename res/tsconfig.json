@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "src/*": ["./src/*"],
+      "bun:bundle": ["./shims/bun-bundle.ts"],
+      "@ant/claude-for-chrome-mcp": ["./node_modules/@ant/claude-for-chrome-mcp/src/index.ts"],
+      "@ant/computer-use-mcp": ["./node_modules/@ant/computer-use-mcp/src/index.ts"],
+      "@ant/computer-use-mcp/*": ["./node_modules/@ant/computer-use-mcp/src/*"],
+      "@ant/computer-use-input": ["./node_modules/@ant/computer-use-input/js/index.js"],
+      "@ant/computer-use-swift": ["./node_modules/@ant/computer-use-swift/js/index.js"],
+      "@modelcontextprotocol/sdk/*": ["./node_modules/@modelcontextprotocol/sdk/dist/esm/*"],
+      "@mixmark-io/domino": ["./node_modules/@mixmark-io/domino/lib/index.js"],
+      "@smithy/node-http-handler": ["./node_modules/@smithy/node-http-handler/dist-cjs/index.js"],
+      "@smithy/core": ["./node_modules/@smithy/core/dist-cjs/index.js"],
+      "@xmldom/xmldom": ["./node_modules/@xmldom/xmldom/lib/index.js"],
+      "asciichart": ["./node_modules/asciichart/asciichart.js"],
+      "color-diff-napi": ["./src/native-ts/color-diff/index.ts"],
+      "fflate": ["./node_modules/fflate/esm/index.mjs"],
+      "fuse.js": ["./node_modules/fuse.js/dist/fuse.mjs"],
+      "gaxios": ["./node_modules/gaxios/build/src/index.js"],
+      "lru-cache": ["./node_modules/lru-cache/dist/esm/index.js"],
+      "marked": ["./node_modules/marked/lib/marked.esm.js"],
+      "modifiers-napi": ["./vendor/modifiers-napi-src/index.ts"],
+      "pngjs": ["./node_modules/pngjs/lib/png.js"],
+      "signal-exit": ["./node_modules/signal-exit/dist/mjs/index.js"],
+      "turndown": ["./node_modules/turndown/lib/turndown.cjs.js"],
+      "usehooks-ts": ["./node_modules/usehooks-ts/dist/index.js"],
+      "vscode-jsonrpc/node.js": ["./node_modules/vscode-jsonrpc/lib/node/main.js"],
+      "xmlbuilder": ["./node_modules/xmlbuilder/lib/index.js"],
+      "yaml": ["./node_modules/yaml/dist/index.js"]
+    }
+  },
+  "include": ["src/**/*", "shims/**/*"],
+  "exclude": ["dist"]
+}
